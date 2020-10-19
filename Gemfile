@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -44,13 +45,17 @@ gem 'bootstrap-sass', '~> 3.4.1'
 
 gem 'sassc-rails', '>= 2.1.0'
 
+gem 'httparty'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'dotenv-rails'
   gem 'rspec-rails'
   gem 'launchy'
   gem 'pry'
   gem 'capybara'
+  gem 'simplecov', require: false
 end
 
 group :development do
